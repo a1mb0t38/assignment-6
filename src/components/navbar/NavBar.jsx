@@ -28,7 +28,7 @@ const NavBar = () => {
                     <div className='flex items-center gap-3'>
                         <button className='cursor-pointer text-base font-semibold text-black'>Login</button>
 
-                        <button className='cursor-pointer px-4 py-3 text-white bg-linear-to-r from-blue-700 to-purple-600 rounded-full'>Get Started</button>
+                        <button className='cursor-pointer px-4 py-3 text-white bg-linear-to-r from-blue-700 to-purple-600 rounded-full cursor-pointer transition-transform duration-150 active:scale-95'>Get Started</button>
                     </div>
 
 

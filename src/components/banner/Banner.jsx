@@ -5,7 +5,7 @@ import banner from '../../assets/banner.png';
 const Banner = () => {
     return (
         <div>
-            <div className='max-w-[1200px] mx-auto my-16 flex items-center gap-16'>
+            <div className='max-w-[1200px] mx-auto my-16 flex flex-col-reverse md:flex-row items-center gap-16'>
                 <div>
                     <div className='flex items-center gap-2 bg-purple-200 rounded-full w-fit px-4 py-2 cursor-pointer transition-transform duration-150 active:scale-95 mb-6'>
                         <span className='relative flex h-3 w-3'>
@@ -27,7 +27,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div>
-                    <img className='w-fit rounded-[8px]' src={banner} alt="" />
+                    <img className='w-full rounded-[8px]' src={banner} alt="" />
                 </div>
             </div>
         </div>

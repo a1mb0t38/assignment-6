@@ -2,6 +2,8 @@
 
 DigiTools Platform
 
+Project Url: https://thunderous-gecko-9e7c28.netlify.app/
+
 📌 Description
 
 This is a modern and responsive e-commerce frontend application built using React. Users can browse products, add them to the cart, and manage their selections with a smooth and interactive UI. The project focuses on clean design, state management, and user-friendly interactions.

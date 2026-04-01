@@ -13,6 +13,8 @@ const Products = ({ promiseProduct, setCartCount, cartCount }) => {
 
 
     const [productbtn, setProductbtn] = useState("products");
+    const [cartdata, setCartData] = useState([])
+     const [priceCount, setPriceCount] = useState(0);
     return (
         <div>
             <div className='max-w-[1200px] mx-auto text-center'>
@@ -25,8 +27,8 @@ const Products = ({ promiseProduct, setCartCount, cartCount }) => {
                 
                 {
                     productbtn === "products" ? products.map((product, index) => {
-                        return <Cards key={index} product={product} setCartCount={setCartCount} cartCount={cartCount}></Cards>
-                    }) : <Carts></Carts>
+                        return <Cards key={index} product={product} setCartCount={setCartCount} cartCount={cartCount} cartdata={cartdata} setCartData={setCartData}></Cards>
+                    }) : <Carts cartdata={cartdata} priceCount={priceCount} setPriceCount={setPriceCount}></Carts>
                     
                 }
             </div>

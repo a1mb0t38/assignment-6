@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { TiTick } from 'react-icons/ti';
 
-const Cards = ({product, setCartCount, cartCount}) => {
+const Cards = ({product, setCartCount, cartCount, cartdata, setCartData}) => {
     // console.log(product);
     const [bought, setBought] = useState(false);
+   
 
 
     const handleCartCount = () => {
         setBought(true); 
         setCartCount(cartCount + 1);
+        setCartData([...cartdata, product])
     }
 
     return (
@@ -33,8 +35,8 @@ const Cards = ({product, setCartCount, cartCount}) => {
                         <div>
                             
                             {
-                                product.features.map(feature=> {
-                                    return <p className='flex items-center'><TiTick className='text-green-600 text-2xl'></TiTick><span className='text-base'>{feature}</span></p>
+                                product.features.map((feature, index)=> {
+                                    return <p key={index}    className='flex items-center'><TiTick className='text-green-600 text-2xl'></TiTick><span className='text-base'>{feature}</span></p>
                                 })
                             }
                         </div>

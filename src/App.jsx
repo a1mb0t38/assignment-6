@@ -5,6 +5,7 @@ import Intro from './components/intro/Intro'
 import NavBar from './components/navbar/NavBar'
 import ProductsIntro from './components/products/ProductsIntro'
 import Products from './components/products/Products'
+import StarterCard from './components/starterCard/StarterCard'
 
 
 const fetchdata = async () => {
@@ -30,6 +31,7 @@ function App() {
       }>
         <Products promiseProduct={promiseProduct} setCartCount={setCartCount} cartCount={cartCount}></Products>
       </Suspense>
+      <StarterCard></StarterCard>
     </>
   )
 }

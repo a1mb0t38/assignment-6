@@ -1,6 +1,6 @@
 import React from 'react';
 import { CiPlay1 } from 'react-icons/ci';
-
+import banner from '../../assets/banner.png';
 
 const Banner = () => {
     return (
@@ -27,7 +27,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div>
-                    <img className='w-fit rounded-[8px]' src="/src/assets/banner.png" alt="" />
+                    <img className='w-fit rounded-[8px]' src={banner} alt="" />
                 </div>
             </div>
         </div>

@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from '../../assets/DigiTools.png';
 
 const NavBar = ({cartCount}) => {
     return (
         <div>
             <div className="flex justify-between items-center px-52 py-3">
                 <div className="">
-                    <img src="/src/assets/DigiTools.png" alt="" />
+                    <img src={logo} alt="" />
                 </div>
                 <div>
                     <ul className='flex items-center gap-8 font-semibold text-base text-black'>
